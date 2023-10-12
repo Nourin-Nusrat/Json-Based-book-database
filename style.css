@@ -1,0 +1,134 @@
+/* body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+} */
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Remove the following line to allow scrolling to the top */
+    /* height: 100vh; */
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3A3B3C;
+    color: white;
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.custom-button {
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #092d42;
+    color: #fff;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.custom-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-groupdel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #e90808;
+}
+
+label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: #1d2236;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    /* align : center; */
+    /* cursor: pointer; */
+}
+
+input[type="submit"]:hover {
+    background-color: #516479;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between; /* Distribute forms evenly across the row */
+}
+
+.side-by-side-form {
+    width: 48%; /* Adjust the width to control the spacing between forms */
+    margin-right: 20px; /* Add right margin for padding */
+}
+
+/* Add left margin to the first form to maintain even spacing */
+.side-by-side-form:first-child {
+    margin-left: 20px;
+}
